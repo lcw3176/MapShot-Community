@@ -1,8 +1,8 @@
-package com.joebrooks.community.web.handler;
+package com.coldrain.community.web.handler;
 
-import com.joebrooks.community.consts.responsecode.ErrorCode;
-import com.joebrooks.community.consts.responsecode.ResponseCode;
-import com.joebrooks.community.web.response.CommunityResponse;
+import com.coldrain.community.consts.responsecode.ErrorCode;
+import com.coldrain.community.consts.responsecode.ResponseCode;
+import com.coldrain.community.web.response.CommonResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,18 +16,19 @@ public class CommunityExceptionHandler {
     @ExceptionHandler(RuntimeException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ResponseBody
-    public CommunityResponse communityException(RuntimeException e) {
+    public CommonResponse communityException(RuntimeException e) {
         ResponseCode errorCode = ErrorCode.SYSTEM_ERROR;
 
-        return new CommunityResponse(errorCode);
+        return new CommonResponse(errorCode);
     }
 
     @ExceptionHandler(NoHandlerFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public CommunityResponse handleNoHandlerFound(NoHandlerFoundException e) {
+    @ResponseBody
+    public CommonResponse handleNoHandlerFound(NoHandlerFoundException e) {
         ResponseCode errorCode = ErrorCode.NOT_FOUND;
 
-        return new CommunityResponse(errorCode);
+        return new CommonResponse(errorCode);
     }
 
 

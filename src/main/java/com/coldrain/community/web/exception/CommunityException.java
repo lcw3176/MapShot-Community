@@ -1,6 +1,6 @@
-package com.joebrooks.community.web.exception;
+package com.coldrain.community.web.exception;
 
-import com.joebrooks.community.consts.responsecode.ResponseCode;
+import com.coldrain.community.consts.responsecode.ResponseCode;
 import lombok.Getter;
 
 @Getter
@@ -12,5 +12,5 @@ public class CommunityException extends RuntimeException {
         super(msg, throwable);
         this.code = code;
     }
-    
+
 }

@@ -1,4 +1,4 @@
-package com.joebrooks.community.consts.responsecode;
+package com.coldrain.community.consts.responsecode;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

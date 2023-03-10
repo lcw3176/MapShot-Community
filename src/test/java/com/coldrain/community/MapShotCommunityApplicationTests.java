@@ -1,4 +1,4 @@
-package com.joebrooks.community;
+package com.coldrain.community;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

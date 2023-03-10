@@ -1,4 +1,4 @@
-package com.joebrooks.community.consts.responsecode;
+package com.coldrain.community.consts.responsecode;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,5 +13,5 @@ public enum SuccessCode implements ResponseCode {
     private final HttpStatus status;
     private final boolean success;
     private final String message;
-    
+
 }

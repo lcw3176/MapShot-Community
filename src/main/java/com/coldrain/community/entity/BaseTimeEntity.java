@@ -1,4 +1,4 @@
-package com.coldrain.community.domain.entity;
+package com.coldrain.community.entity;
 
 import java.time.LocalDateTime;
 import javax.persistence.Column;

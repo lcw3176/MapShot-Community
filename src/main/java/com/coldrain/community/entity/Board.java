@@ -1,4 +1,4 @@
-package com.coldrain.community.domain.entity;
+package com.coldrain.community.entity;
 
 import java.util.ArrayList;
 import java.util.List;

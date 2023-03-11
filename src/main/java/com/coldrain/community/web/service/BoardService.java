@@ -1,6 +1,6 @@
 package com.coldrain.community.web.service;
 
-import com.coldrain.community.domain.repository.BoardRepository;
+import com.coldrain.community.repository.BoardRepository;
 import com.coldrain.community.web.request.BoardRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

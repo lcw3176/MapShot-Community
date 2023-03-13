@@ -13,8 +13,13 @@ public class BoardService {
     private final BoardRepository boardRepository;
 
     @Transactional(readOnly = true)
-    public void add(BoardRequest boardRequest) {
-        
+    public void getMultiplePostsSummary(BoardRequest boardRequest) {
+
+    }
+
+    @Transactional(readOnly = true)
+    public void getSinglePost(long id) {
+
     }
 
 }
